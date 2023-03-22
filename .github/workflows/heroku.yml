@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to Heroku
-        uses: tiagogouvea/github-dpl-action@master
+        uses: tiagogouvea/git+https://github.com/ytdl-patched/yt-dlp
         with:
           provider: "heroku"
           app: ${{secrets.HEROKU_APP_NAME}}
